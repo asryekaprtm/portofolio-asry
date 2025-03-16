@@ -68,11 +68,11 @@ const Footer = () => {
           transition: color 0.3s ease-in-out, transform 0.2s;
         }
         .social-icon:hover {
-          color: #0bceaf;
+          color: #424c57;
           transform: scale(1.1);
         }
         .sitename {
-          color: #0bceaf;
+          color: #424c57;
         }
       `}</style>
     </footer>
