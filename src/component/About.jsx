@@ -26,7 +26,7 @@ const About = () => {
           <div className="row gy-4 justify-content-center">
             <div className="col-lg-3">
               <img
-                src="assets/img/SNOW_20230204_004908_347.jpg"
+                src="assets/img/foto baru.jpg"
                 className="img-fluid"
                 alt=""
               />
@@ -52,7 +52,7 @@ const About = () => {
                     </li>
                     <li>
                       <i className="bi bi-record2-fill"></i>{" "}
-                      <strong>Website:</strong> <span>www.example.com</span>
+                      <strong>GitHub:</strong> <span>github.com/asryekaprtm</span>
                     </li>
                     <li>
                       <i className="bi bi-record2-fill"></i>{" "}
