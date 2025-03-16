@@ -2,8 +2,7 @@ import React, { useState } from "react";
 
 // Data skill dengan kategori & ikon Bootstrap Icons
 const skillData = [
-  { name: "Microsoft Word", category: "Software", icon: "bi bi-laptop" },
-  { name: "Microsoft Excel", category: "Software", icon: "bi bi-laptop" },
+  { name: "Microsoft Excel", category: "Data Science", icon: "bi bi-laptop" },
   { name: "Python", category: "Programming", icon: "bi bi-code-slash" },
   { name: "Tableau", category: "Data Science", icon: "bi bi-bar-chart" },
   {
@@ -67,9 +66,8 @@ const Skill = () => {
           {categories.map((category, index) => (
             <button
               key={index}
-              className={`btn fw-bold px-3 py-2 ${
-                selectedCategory === category ? "text-white" : "#441752"
-              }`}
+              className={`btn fw-bold px-3 py-2 ${selectedCategory === category ? "text-white" : "#441752"
+                }`}
               style={{
                 backgroundColor:
                   selectedCategory === category ? "#441752" : "transparent",
