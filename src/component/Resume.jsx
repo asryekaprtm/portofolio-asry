@@ -12,28 +12,30 @@ const resumeData = {
         "3rd Place in IT.CUP Futsal, Informatics Engineering Student Association, 2022.",
         "Participated in Independent Student Exchange Program at UPN Veteran East Java, 2022.",
         "Participated in the Independent Study Program at Data Academy, 2023.",
-        "Teaching Assistant for courses: Algorithms and Programming, Decision Support Systems, and Object-Oriented Programming (OOP), 2023–2024.",
+        "Teaching Assistant for Algorithms and Programming, Decision Support Systems, and OOP, 2023–2024.",
+        <a
+          href="https://jurnal.atmaluhur.ac.id/index.php/sisfokom/article/view/2097"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary"
+          key="journal-link"
+        >
+          Publishing a Sinta 3 Scientific Journal in Sisfokom (Information Systems and Computer Journal).
+        </a>,
       ],
-      journal: {
-        title:
-          "Publishing a Sinta 3 Scientific Journal in Sisfokom (Information Systems and Computer Journal).",
-        link: "https://jurnal.atmaluhur.ac.id/index.php/sisfokom/article/view/2097",
-      },
     },
     {
       institution: "Veteran Development University of East Java (UPN Jatim)",
       duration: "August 2022 - January 2023",
-      program: "Merdeka Domestic Student Exchange",
+      degree: "Merdeka Domestic Student Exchange",
       certificateLink:
         "https://drive.google.com/file/d/1VMkJ_qOCAUqbNAjJNsnO92Ruolsl6vUh/view",
     },
     {
       institution: "Coursera",
       duration: "May 2024 – August 2024",
-      certification: "Google Data Analytics Professional Certificate",
-      certificateLink:
-        "https://drive.google.com/file/d/1T4Ls-3PB9ovMvvHTB4Nz6LijcuUPfumW/view?usp=sharing",
-      courses: [
+      degree: "Google Data Analytics Professional Certificate",
+      achievements: [
         "Data Analytics Basics: Data Everywhere.",
         "Asking Questions to Make Data-Driven Decisions.",
         "Preparing Data for Exploration.",
@@ -42,6 +44,61 @@ const resumeData = {
         "Data Analysis with R Programming.",
         "Google Data Analytics Capstone: Complete a Case Study.",
       ],
+      certificateLink:
+        "https://drive.google.com/file/d/1T4Ls-3PB9ovMvvHTB4Nz6LijcuUPfumW/view?usp=sharing",
+    },
+    {
+      institution: "Data Academy",
+      duration: "August 2023 - January 2024",
+      degree: "Certified Independent Study Data Science Academy",
+      achievements: [
+        "Data engineering concepts, data warehouses, and SQL.",
+        "ETL implementation using Talend.",
+        "Data analytics and visualization concepts.",
+        "Introduction to Big Data and Data Science.",
+        "Statistical fundamentals for Data Science and Data Structures.",
+        "Python basics for Data Science (Data Processing and Exploratory Data Analytics).",
+        "Machine Learning and advanced data techniques.",
+        "Final project implementation.",
+      ],
+      certificateLink:
+        "https://drive.google.com/file/d/18sEvMs_7j5dn1SrTQ6924QRpNfWKMv5u/view",
+    },
+    {
+      institution: "Microsoft Learn",
+      duration: "january 2025 - present",
+      degree: "elevAIte with Dicoding Program",
+      achievements: [
+        "Course AI-900T00-A: Microsoft Azure AI Fundamentals - Training.",
+        "Course AZ-900T00-A: Microsoft Azure Fundamentals - Training.",
+        "GitHub Copilot Fundamentals Part 1 of 2.",
+        "Develop solutions with Azure AI Document Intelligence.",
+        "Microsoft Applied Skills: Build a natural language processing solution with Azure AI Language - Applied Skills.",
+        "Microsoft Applied Skills: Build an Azure AI Vision solution - Applied Skills.",
+        "Develop generative AI apps with Azure OpenAI and Semantic Kernel.",
+        "Implement security through a pipeline using Azure DevOps.",
+        "Deploy cloud-native apps using Azure Container Apps.",
+        "Course AI-102T00-A: Designing and Implementing a Microsoft Azure AI Solution - Training.",
+        "Course DP-100T01-A: Designing and implementing a data science solution on Azure - Training.",
+      ],
+      // certificateLink:
+      //   "https://drive.google.com/file/d/18sEvMs_7j5dn1SrTQ6924QRpNfWKMv5u/view",
+    },
+    {
+      institution: "Dicoding",
+      duration: "August 2023 - December 2023",
+      degree: "Fundamental Data Science Learning Program",
+      achievements: [
+        "The Power of Data.",
+        "Data Science Fundamentals.",
+        "Exploring Data Analysis.",
+        "Supporting Technologies and Tools for Data Science.",
+        "Machine Learning in Data Science.",
+        "Identifying Opportunities.",
+        "Final class exam.",
+      ],
+      certificateLink:
+        "https://drive.google.com/file/d/1n-dqeHLnTFr6tcWXwxmQehBNOGuc5wOM/view?usp=sharing",
     },
   ],
   experience: [
@@ -56,6 +113,7 @@ const resumeData = {
         "Technical Support and Troubleshooting.",
         "System Administration.",
         "Documentation and Reporting.",
+        "Dashboard Interactive"
       ],
     },
     {
@@ -76,20 +134,10 @@ const resumeData = {
       position: "Practical Assistant",
       certificateLink:
         "https://drive.google.com/file/d/1v1UZ-I5A_ZIriFfp3zQ6QsgP5vT5DZGL/view?usp=sharing",
-      courses: [
+      achievements: [
         "Algorithms and Programming.",
         "Decision Support Systems.",
         "Object Oriented Programming.",
-      ],
-    },
-    {
-      company:
-        "Student Executive Board, Faculty of Engineering, Tadulako University (BEM FT-UNTAD)",
-      duration: "2022 - 2023",
-      position: "Staff of Advocacy and Community Welfare Department",
-      responsibilities: [
-        "Conducted research on student-related issues inside and outside the campus.",
-        "Planned responses to student aspirations at the Faculty of Engineering.",
       ],
     },
   ],
@@ -113,39 +161,30 @@ const Resume = () => {
                 <h5>{edu.duration}</h5>
                 {edu.degree && (
                   <p>
-                    <em>
-                      {edu.degree} <b>{edu.gpa}</b>
-                    </em>
+                    <strong><em>{edu.degree}</em></strong> {edu.gpa && <b>{edu.gpa}</b>}
                   </p>
                 )}
-                {edu.achievements && (
+                {edu.program && (
+                  <p>
+                    <em>{edu.program}</em>
+                  </p>
+                )}
+                {edu.achievements?.length > 0 && (
                   <ul>
                     {edu.achievements.map((item, idx) => (
                       <li key={idx}>{item}</li>
                     ))}
                   </ul>
                 )}
-                {edu.journal && (
-                  <p>
-                    <a
-                      href={edu.journal.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{ textDecoration: "underline", color: "#344CB7" }}
-                    >
-                      {edu.journal.title}
-                    </a>
-                  </p>
-                )}
-                {edu.program && (
+                {edu.certificateLink && (
                   <p>
                     <a
                       href={edu.certificateLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ textDecoration: "underline", color: "#344CB7" }}
+                      className="text-primary"
                     >
-                      <b>{edu.program}</b>
+                      View Certificate
                     </a>
                   </p>
                 )}
@@ -163,9 +202,16 @@ const Resume = () => {
                 <p>
                   <em>{exp.position}</em>
                 </p>
-                {exp.responsibilities && (
+                {exp.responsibilities?.length > 0 && (
                   <ul>
                     {exp.responsibilities.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+                {exp.achievements?.length > 0 && (
+                  <ul>
+                    {exp.achievements.map((item, idx) => (
                       <li key={idx}>{item}</li>
                     ))}
                   </ul>
@@ -176,7 +222,7 @@ const Resume = () => {
                       href={exp.certificateLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ textDecoration: "underline", color: "#344CB7" }}
+                      className="text-primary"
                     >
                       View Certificate
                     </a>
