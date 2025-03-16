@@ -13,7 +13,7 @@ const Header = () => {
     typedInstance.current = new Typed(typedRef.current, {
       strings: [
         "Data Scientist Enthusiast",
-        "Data Analyst",
+        "Data Analyst Enthusiast",
         "Network Engineer",
       ],
       typeSpeed: 80, // Lebih smooth
