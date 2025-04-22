@@ -5,6 +5,8 @@ const skillData = [
   { name: "Microsoft Excel", category: "Data Science", icon: "bi bi-laptop" },
   { name: "Python", category: "Programming", icon: "bi bi-code-slash" },
   { name: "Tableau", category: "Data Science", icon: "bi bi-bar-chart" },
+  { name: "Power BI", category: "Data Science", icon: "bi bi-bar-chart" },
+  { name: "Looker Studio", category: "Data Science", icon: "bi bi-bar-chart" },
   {
     name: "Machine Learning",
     category: "Data Science",
