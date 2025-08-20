@@ -29,7 +29,7 @@ const Footer = () => {
               icon: "bi bi-instagram",
             },
             {
-              href: "https://wa.me/6285174381051",
+              href: "https://wa.me/6285757559857",
               label: "WhatsApp",
               icon: "bi bi-whatsapp",
               newTab: true,
