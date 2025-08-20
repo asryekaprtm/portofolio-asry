@@ -50,6 +50,9 @@ const Header = () => {
               </p>
               <div className="social-links">
                 <a href="https://www.facebook.com/AsryEkaPratama">
+                  <i className="bi bi-whatsapp"></i>
+                </a>
+                <a href="https://www.facebook.com/AsryEkaPratama">
                   <i className="bi bi-facebook"></i>
                 </a>
                 <a href="https://www.instagram.com/asry.ekaprtm">
