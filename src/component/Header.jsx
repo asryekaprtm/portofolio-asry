@@ -49,7 +49,7 @@ const Header = () => {
                 I'm <span ref={typedRef} style={{ fontWeight: "bold" }}></span>
               </p>
               <div className="social-links">
-                <a href="https://www.facebook.com/AsryEkaPratama">
+                <a href="https://wa.me/6285757559857">
                   <i className="bi bi-whatsapp"></i>
                 </a>
                 <a href="https://www.facebook.com/AsryEkaPratama">
