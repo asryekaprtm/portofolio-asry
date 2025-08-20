@@ -59,7 +59,7 @@ const Header = () => {
                   <i className="bi bi-linkedin"></i>
                 </a>
                 <a
-                  href="assets/CV Asry.pdf"
+                  href="assets/CV Asry .pdf"
                   download="CV_Moh_Asry_Eka_Pratama"
                   target="_blank"
                   rel="noopener noreferrer"
