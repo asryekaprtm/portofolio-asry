@@ -15,7 +15,7 @@ const Contact = () => {
               <i className="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Address</h3>
-                <p>Jl. Bukit Marwah, Talise, Kec. Mantikulore, Kota Palu, Sulawesi Tengah 94118</p>
+                <p>Jl. Dayo Dara II (BTN Bulu Bulava III Blok.B No.15), Talise, Kec. Mantikulore, Kota Palu, Sulawesi Tengah 94118</p>
               </div>
             </div>
 
@@ -23,7 +23,7 @@ const Contact = () => {
               <i className="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Call Us</h3>
-                <p>+62 8517 4381 051</p>
+                <p>+62 8575 7559 857</p>
               </div>
             </div>
 
